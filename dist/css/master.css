@@ -1,0 +1,36 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@font-face {font-family: "Cocon Next Arabic Light"; src: url("//db.onlinewebfonts.com/t/4fdca598434885f33f83ffdb03d1c5e7.eot");
+  src: url("//db.onlinewebfonts.com/t/4fdca598434885f33f83ffdb03d1c5e7.eot?#iefix") format("embedded-opentype"),
+  url("//db.onlinewebfonts.com/t/4fdca598434885f33f83ffdb03d1c5e7.woff2") format("woff2"),
+  url("//db.onlinewebfonts.com/t/4fdca598434885f33f83ffdb03d1c5e7.woff") format("woff"),
+  url("//db.onlinewebfonts.com/t/4fdca598434885f33f83ffdb03d1c5e7.ttf") format("truetype"),
+  url("//db.onlinewebfonts.com/t/4fdca598434885f33f83ffdb03d1c5e7.svg#Cocon Next Arabic") format("svg"); }
+
+@font-face {font-family: "Cocon Next Arabic Bold"; src: url("//db.onlinewebfonts.com/t/b66fc2e5aebf8caea5968b38f84ce785.eot");
+  src: url("//db.onlinewebfonts.com/t/b66fc2e5aebf8caea5968b38f84ce785.eot?#iefix") format("embedded-opentype"),
+  url("//db.onlinewebfonts.com/t/b66fc2e5aebf8caea5968b38f84ce785.woff2") format("woff2"),
+  url("//db.onlinewebfonts.com/t/b66fc2e5aebf8caea5968b38f84ce785.woff") format("woff"),
+  url("//db.onlinewebfonts.com/t/b66fc2e5aebf8caea5968b38f84ce785.ttf") format("truetype"),
+  url("//db.onlinewebfonts.com/t/b66fc2e5aebf8caea5968b38f84ce785.svg#Cocon Next Arabic") format("svg"); }
+
+@font-face {font-family: "Cocon Next Arabic Regular"; src: url("//db.onlinewebfonts.com/t/4ce5fad2df30ef4ed5ee61f579ee24b7.eot");
+  src: url("//db.onlinewebfonts.com/t/4ce5fad2df30ef4ed5ee61f579ee24b7.eot?#iefix") format("embedded-opentype"),
+  url("//db.onlinewebfonts.com/t/4ce5fad2df30ef4ed5ee61f579ee24b7.woff2") format("woff2"),
+  url("//db.onlinewebfonts.com/t/4ce5fad2df30ef4ed5ee61f579ee24b7.woff") format("woff"),
+  url("//db.onlinewebfonts.com/t/4ce5fad2df30ef4ed5ee61f579ee24b7.ttf") format("truetype"),
+  url("//db.onlinewebfonts.com/t/4ce5fad2df30ef4ed5ee61f579ee24b7.svg#Cocon Next Arabic") format("svg"); }
+
+body {
+  direction: rtl;
+}
+
+@media screen and (min-width: 1900px) {
+  .container {
+    width: 1556px;
+  }
+}

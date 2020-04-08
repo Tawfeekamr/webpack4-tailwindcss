@@ -1,0 +1,39 @@
+{
+  "dependencies": {
+    "autoprefixer": "^9.7.6",
+    "css-loader": "^3.5.1",
+    "postcss": "^7.0.27",
+    "postcss-loader": "^3.0.0",
+    "style-loader": "^1.1.3",
+    "tailwindcss": "^1.2.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "name": "shagafi-frontend",
+  "version": "1.0.0",
+  "description": "Shagafi website",
+  "main": "./dist/bundle.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "devDependencies": {
+    "mini-css-extract-plugin": "^0.9.0",
+    "postcss-cli": "^7.1.0",
+    "tailwindcss": "^1.2.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "scripts": {
+    "start": "webpack-dev-server --mode=development --config webpack.config.js",
+    "post": "postcss dist/css/master.css -o dist/css/tailwind.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://tawfiq_amro@bitbucket.org/tawfiq_amro/shagafi-frontend.git"
+  },
+  "author": "Tawfeeq Amro",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/tawfiq_amro/shagafi-frontend#readme"
+}
