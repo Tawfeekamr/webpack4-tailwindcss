@@ -11,7 +11,8 @@
   <link rel="apple-touch-icon" href="../icon.png">
   <!-- Place favicon.ico in the root directory -->
   <meta name="theme-color" content="#fafafa">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
 
 </head>
 
@@ -26,23 +27,22 @@
       <div class="container mx-auto" data-aos="fade-down">
         <nav class="flex items-center justify-between flex-wrap p-6">
           <div class="flex items-center flex-shrink-0 text-white mr-6">
-            <svg class="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/></svg>
-            <span class="font-semibold text-xl tracking-tight">Tailwind CSS</span>
+            <a href="/"> <img src="img/shagafi_logo.svg" alt=""></a>
           </div>
           <div class="block lg:hidden">
-            <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+            <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400" id="hamburgerbtn">
               <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
             </button>
           </div>
           <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-            <div class="text-sm lg:flex-grow text-xl">
-              <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+            <div class="text-sm lg:flex-grow text-xl hidden md:block" id="mobileMenu">
+              <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-pink mr-4">
                 الدروس
               </a>
-              <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+              <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-pink mr-4">
                 عن المنصة
               </a>
-              <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+              <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-pink mr-4">
                 تواصل معنا
               </a>
             </div>
@@ -58,26 +58,217 @@
     </header>
   <!-- End Header -->
 
-  <!-- Start Main -->
-    <main class="container">
-      <section class="h-full block lg:py-32">
+    <main class="container overflow-hidden">
+      <!-- Start Master Section -->
+      <section class="h-full block md:pt-12 lg:py-20 xl:py-32">
         <div class="flex text-right items-center justify-center" data-aos="fade-up">
-            <div class="flex-col justify-center">
-              <h1 class="lg:text-8xl w-3/4">
-                رحلتك في اكتشاف <span class="text-pink">شغفك</span> تبدأ الآن!
+            <div class="flex-col justify-center lg:w-3/4">
+              <h1 class="text-4xl my-4 lg:text-6xl xl:text-8xl md:w-3/4 px-4 md:px-0 md:text-right 2xl:text-6xl 3xl:text-8xl">
+                رحلتك في اكتشاف <span class="text-pink hvr-grow-rotate">شغفك</span> تبدأ الآن!
               </h1>
-              <h2 class="lg:text-4xl w-3/4 pl-16 text-light font-light">
+              <h2 class="lg:text-2xl xl:text-4xl md:text-right px-4 md:px-0 xl:w-3/4 md:pl-16 text-xl text-light font-light">
                 سجل الآن وانضم الى العديد في تعلم الأشغال اليدوية مع أبرز الفنانين الأردنيين
               </h2>
+              <div class="w-full my-8 md:my-auto md:mt-12">
+                <div class="w-full mx-auto md:mx-0 pr-2 md:pr-0 md:text-right md:w-3/4">
+                  <a href="/" class="bg-pink p-3 md:px-8 rounded-full text-white text-lg text-center lg:text-xl xl:text-2xl hvr-wobble-vertical">
+                    اكتشف المجالات المطروحة
+                  </a>
+                </div>
+              </div>
+
             </div>
-          <img class="flex text-left" src="img/clay_600x600_circle.png" alt="">
+          <div class="md:w-64 lg:w-1/2">
+            <img class="flex text-left hidden md:block ie-fix" src="img/clay_645x645_circle.png" alt="">
+          </div>
+        </div>
+      </section>
+      <!-- End Master Section -->
+      <section class="px-4 py-8 md:py-24 lg:pr-0 lg:py-20 xl:py-32">
+        <div>
+          <div class="flex flex-row flex-wrap">
+            <div class="flex md:bg-white w-3/2 md:w-3/4 bg-gray-400 p-2 text-gray-700">
+              <h2 class="float-right text-3xl text-softblack md:text-4xl md:pb-4">
+                المجالات المقدمة
+              </h2>
+            </div>
+            <div class="md:w-1/4 bg-gray-500 p-4 text-center text-gray-200  text-pink underline">
+              <a href="" class="inline-flex justify-center items-center pt-1 md:pt-3">
+                إظهار الجميع
+              </a>
+            </div>
+
+          </div>
+        </div>
+        <div class="xl:flex mb-4 lg:pl-12">
+          <div class="flex-1 my-4 xl:w-1/2 md:h-56 lg:h-64 xl:ml-4 border border-slight rounded-md" data-aos="fade-left">
+            <div class="flex w-full">
+              <div class="md:h-56 md:h-56 lg:h-64 overflow-hidden block">
+                <img class="hidden md:block md:h-56 lg:h-64 rounded-r"  src="img/noon-300x300.png" alt="">
+              </div>
+              <div class="flex-1 p-2 pr-4">
+                <p class="text-light mb-2">
+                  الصناعات الخزفية
+                </p>
+                <h3 class="font-bold text-2xl text-softblack">
+                  مدخل الى السيراميك والخزف
+                </h3>
+                <p class="text-gray text-lg my-2 md:mt-3 md:h-8 lg:h-16">
+                  ستتعلم مبادئ البناء الخزفي والطرق المتبعة لإنشاء العمل الفني
+                </p>
+                <p class="text-light">
+                  تقدمها المصممة ريما دحبور
+                </p>
+                <div class="mt-4 md:mt-2">
+                  <a href="/" class="text-softblack block h-12 px-5 bg-yellow py-3 rounded-full w-48 relative font-bold hvr-backward">
+                    اذهب الى الدرس
+                    <span class="absolute arrow-place">
+                      <i class="las la-arrow-left text-4xl text-softblack"></i>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex-1 my-4 xl:w-1/2 md:h-56 lg:h-64 xl:ml-4 border border-slight rounded-md" data-aos="fade-right">
+            <div class="flex">
+              <div class="md:h-56 md:h-56 lg:h-64 overflow-hidden block">
+                <img class="hidden md:block md:h-56 lg:h-64 rounded-r"  src="img/noon-300x300.png" alt="">
+              </div>
+              <div class="flex-1 p-2 pr-4">
+                <p class="text-light mb-2">
+                  الصناعات الخزفية
+                </p>
+                <h3 class="font-bold text-2xl text-softblack">
+                  مدخل الى السيراميك والخزف
+                </h3>
+                <p class="text-gray text-lg my-2 md:mt-3 md:h-8 lg:h-16">
+                  ستتعلم مبادئ البناء الخزفي والطرق المتبعة لإنشاء العمل الفني
+                </p>
+                <p class="text-light">
+                  تقدمها المصممة ريما دحبور
+                </p>
+                <div class="mt-4 md:mt-2">
+                  <a href="/" class="text-softblack block h-12 px-5 bg-yellow py-3 rounded-full w-48 relative font-bold hvr-backward">
+                    اذهب الى الدرس
+                    <span class="absolute arrow-place">
+                      <i class="las la-arrow-left text-4xl text-softblack"></i>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="xl:flex mb-4 lg:pl-12 lg:pr-0">
+          <div class="flex-1 my-4 xl:w-1/2 md:h-56 lg:h-64 xl:ml-4 border border-slight rounded-md" data-aos="fade-left">
+            <div class="flex w-full">
+              <div class="md:h-56 md:h-56 lg:h-64 overflow-hidden block">
+                <img class="hidden md:block md:h-56 lg:h-64 rounded-r"  src="img/noon-300x300.png" alt="">
+              </div>
+              <div class="flex-1 p-2 pr-4">
+                <p class="text-light mb-2">
+                  الصناعات الخزفية
+                </p>
+                <h3 class="font-bold text-2xl text-softblack">
+                  مدخل الى السيراميك والخزف
+                </h3>
+                <p class="text-gray text-lg my-2 md:mt-3 md:h-8 lg:h-16">
+                  ستتعلم مبادئ البناء الخزفي والطرق المتبعة لإنشاء العمل الفني
+                </p>
+                <p class="text-light">
+                  تقدمها المصممة ريما دحبور
+                </p>
+                <div class="mt-4 md:mt-2">
+                  <a href="/" class="text-softblack block h-12 px-5 bg-yellow py-3 rounded-full w-48 relative font-bold hvr-backward">
+                    اذهب الى الدرس
+                    <span class="absolute arrow-place">
+                      <i class="las la-arrow-left text-4xl text-softblack"></i>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex-1 my-4 xl:w-1/2 md:h-56 lg:h-64 xl:ml-4 border border-slight rounded-md" data-aos="fade-right">
+            <div class="flex">
+              <div class="md:h-56 md:h-56 lg:h-64 overflow-hidden block">
+                <img class="hidden md:block md:h-56 lg:h-64 rounded-r"  src="img/noon-300x300.png" alt="">
+              </div>
+              <div class="flex-1 p-2 pr-4">
+                <p class="text-light mb-2">
+                  الصناعات الخزفية
+                </p>
+                <h3 class="font-bold text-2xl text-softblack">
+                  مدخل الى السيراميك والخزف
+                </h3>
+                <p class="text-gray text-lg my-2 md:mt-3 md:h-8 lg:h-16">
+                  ستتعلم مبادئ البناء الخزفي والطرق المتبعة لإنشاء العمل الفني
+                </p>
+                <p class="text-light">
+                  تقدمها المصممة ريما دحبور
+                </p>
+                <div class="mt-4 md:mt-2">
+                  <a href="/" class="text-softblack block h-12 px-5 bg-yellow py-3 rounded-full w-48 relative font-bold hvr-backward">
+                    اذهب الى الدرس
+                    <span class="absolute arrow-place">
+                      <i class="las la-arrow-left text-4xl text-softblack"></i>
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Start Bottom Section -->
+      <section class="pb-12 lg:py-10 xl:py-32">
+        <div class="flex text-right items-center md:justify-center" data-aos="flip-up">
+          <img class="hidden md:flex text-left w-1/2 pl-16" src="img/bottom.png" alt="">
+          <div class="flex-col justify-center h-full px-6">
+            <h1 class="text-4xl xl:text-6xl 3xl:text-8xl xl:w-3/4 ">
+              لأن في التعلم <span class="text-pink">متعة!</span>
+            </h1>
+            <h2 class="md:text-xl lg:text-2xl xl:text-4xl md:w-3/2 text-light font-light py-6 md:py-0">
+              أهدافك وهواياتك التي لم تنفك عن التفكير بها أصبحت بمتناول يديك.
+            </h2>
+            <div class="w-full md:mt-12">
+              <div class="">
+                <a href="/" class="block bg-pink p-2 text-center rounded-full text-white w-3/6 md:w-3/5 md:p-3 md:px-12 md:text-xl lg:w-1/2 lg:px-16 lg:text-2xl xl:w-3/6 hvr-wobble-vertical">
+                  اشترك الآن
+                </a>
+              </div>
+            </div>
+
+          </div>
         </div>
 
 
       </section>
 
+      <!-- End Bottom Section -->
     </main>
-<!--  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>-->
+
+
+  <footer class="bg-gray text-white">
+    <div class="flex md:flex-row-reverse flex-wrap align-middle container">
+      <div class="w-full md:w-1/2 bg-gray-500 pt-3 md:p-4 text-center text-gray-200 text-3xl">
+        <i class="lab la-linkedin-in"></i>
+        <i class="lab la-twitter"></i>
+        <i class="lab la-facebook-f"></i>
+
+      </div>
+      <div class="w-full md:w-1/2 bg-gray-400 pb-3 md:p-3 text-center text-gray-700">
+        <p class="pt-4">
+          جميع الحقوق محفوظة © موضوع 2020
+        </p>
+      </div>
+    </div>
+  </footer>
+
+<!--  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrirty="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>-->
 <!--  <script>window.jQuery || document.write('<script src="../js/vendor/jquery-3.4.1.min.js"><\/script>')</script>-->
 <!--  <script src="../js/plugins.js"></script>-->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -85,7 +276,6 @@
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
-    AOS.init();
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
   </script>

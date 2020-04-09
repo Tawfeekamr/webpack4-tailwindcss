@@ -10,15 +10,18 @@ module.exports = {
       yellow: '#FAD848',
       gray: '#535B6C',
       light: '#AAB3C2',
-      slight: '#E7EBF2'
-
+      slight: '#E7EBF2',
+      white: '#fff',
+      softblack: '#0A0E20'
     },
     container: {
       center: true,
     },
     extend: {
       screens: {
-        'x4l': '1900px',
+        '2xl': '1400px',
+        '3xl': '1600px',
+        '4xl': '1900px',
       },
       fontSize: {
         '8xl': '6rem',

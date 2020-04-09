@@ -28,9 +28,33 @@
 body {
   direction: rtl;
 }
+* {
+  transition: all 0.50s ease 0s;
+}
+.active{
+  display: block;
+}
+
+.arrow-place {
+  left: 9px;
+  top: 7px;
+}
+
+/*** Add container width @Breakpoints ***/
 
 @media screen and (min-width: 1900px) {
   .container {
     width: 1556px;
   }
 }
+@media screen and (min-width: 1400px) {
+  .container {
+    width: 1370px;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .container {
+    width: 1570px;
+  }
+}
+/*** End container width @Breakpoints ***/
