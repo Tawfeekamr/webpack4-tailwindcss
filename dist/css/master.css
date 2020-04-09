@@ -24,13 +24,10 @@
   url("//db.onlinewebfonts.com/t/4ce5fad2df30ef4ed5ee61f579ee24b7.woff") format("woff"),
   url("//db.onlinewebfonts.com/t/4ce5fad2df30ef4ed5ee61f579ee24b7.ttf") format("truetype"),
   url("//db.onlinewebfonts.com/t/4ce5fad2df30ef4ed5ee61f579ee24b7.svg#Cocon Next Arabic") format("svg"); }
-
 body {
   direction: rtl;
 }
-* {
-  transition: all 0.50s ease 0s;
-}
+
 .active{
   display: block;
 }
@@ -39,6 +36,123 @@ body {
   left: 9px;
   top: 7px;
 }
+
+/****** ANIMATION BALLS *******/
+
+@-webkit-keyframes bounce {
+  from, to  {
+    bottom: 0;
+    -webkit-animation-timing-function: ease-out;
+  }
+  50% {
+    bottom: 220px;
+    -webkit-animation-timing-function: ease-in;
+  }
+}
+@keyframes bounce {
+  from, to  {
+    bottom: 0;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  50% {
+    bottom: 220px;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+}
+.bouncer {
+  position: absolute;
+  border-radius: 10px;
+
+  -webkit-animation-name: bounce;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-duration: 4.2s;
+
+  animation-name: bounce;
+  animation-iteration-count: infinite;
+  animation-duration: 4.2s;
+}
+.bg-span {
+  z-index: -3000;
+}
+.bg-svg {
+  width: 900px;
+  margin-right: -150px;
+  margin-top: -150px;
+  opacity: 0.2;
+}
+.bg-svg-2 {
+  animation: spin 3s linear infinite;
+  -webkit-animation: spin 3s linear infinite
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+.bg-svg-3 {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  -webkit-animation: pulse-black 2s infinite;
+  animation: pulse-black 2s infinite;
+}
+@-webkit-keyframes pulse-black {
+  0% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+    -webkit-box-shadow: 0 0 0 0 #ff0058c9;
+    box-shadow: 0 0 0 0 #ff0058c9;
+
+  }
+
+  70% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+@keyframes pulse-black {
+  0% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+    -webkit-box-shadow: 0 0 0 0 #ff0058c9;
+    box-shadow: 0 0 0 0 #ff0058c9;
+
+  }
+
+  70% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+/****** ANIMATION BALLS *******/
+
 
 /*** Add container width @Breakpoints ***/
 
@@ -58,3 +172,17 @@ body {
   }
 }
 /*** End container width @Breakpoints ***/
+.example {
+  display: -ms-grid;
+  display: grid;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+  background: -o-linear-gradient(top, white, black);
+  background: linear-gradient(to bottom, white, black);
+}
