@@ -155,22 +155,57 @@ body {
 
 
 /*** Add container width @Breakpoints ***/
+@media screen and (min-width:1024px) {
+  .container {
+    width: 1370px;
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .cards .card {
+    flex: 1 1 55%;
+  }
+}
+@media screen and (min-width:1280px) {
+  .container {
+    width: 1370px;
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .cards .card {
+    flex: 1 1 47%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .container {
+    width: 1370px;
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .cards .card {
+    flex: 1 1 47%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .container {
+    width: 1570px;
+  }
+}
+
 
 @media screen and (min-width: 1900px) {
   .container {
     width: 1556px;
   }
 }
-@media screen and (min-width: 1400px) {
-  .container {
-    width: 1370px;
-  }
-}
-@media screen and (min-width: 1600px) {
-  .container {
-    width: 1570px;
-  }
-}
+
 /*** End container width @Breakpoints ***/
 .example {
   display: -ms-grid;
