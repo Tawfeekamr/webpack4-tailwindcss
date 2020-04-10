@@ -221,3 +221,11 @@ body {
   background: -o-linear-gradient(top, white, black);
   background: linear-gradient(to bottom, white, black);
 }
+.links a {
+  color: #FF0058;
+}
+.links a:after {
+  padding: 0 6px;
+  color: #0A0E20;
+  content: ">";
+}
