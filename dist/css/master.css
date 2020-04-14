@@ -165,6 +165,8 @@ body {
   }
   .cards .card {
     flex: 1 1 55%;
+    max-width: 55%;
+
   }
 }
 @media screen and (min-width:1280px) {
@@ -177,6 +179,8 @@ body {
   }
   .cards .card {
     flex: 1 1 47%;
+    max-width: 47%;
+
   }
 }
 
@@ -190,6 +194,7 @@ body {
   }
   .cards .card {
     flex: 1 1 47%;
+    max-width: 47%;
   }
 }
 
@@ -235,4 +240,8 @@ body {
 }
 .category {
   line-height: 40px;
+}
+
+.rounded-34 {
+  border-radius: 34px;
 }

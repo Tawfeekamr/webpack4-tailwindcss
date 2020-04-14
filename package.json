@@ -2,6 +2,7 @@
   "dependencies": {
     "autoprefixer": "^9.7.6",
     "css-loader": "^3.5.1",
+    "plyr": "^3.5.10",
     "postcss": "^7.0.27",
     "postcss-loader": "^3.0.0",
     "style-loader": "^1.1.3",
