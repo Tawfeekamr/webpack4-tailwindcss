@@ -154,6 +154,46 @@ body {
 /****** ANIMATION BALLS *******/
 
 
+
+/****** START DATE PICKER *******/
+.datepicker{
+  position: absolute;
+  width: 350px;
+  direction: rtl;
+}
+
+
+.datepicker table tr td.active:active:hover, .datepicker table tr td.active.highlighted:active:hover, .datepicker table tr td.active.active:hover, .datepicker table tr td.active.highlighted.active:hover, .datepicker table tr td.active:active:focus, .datepicker table tr td.active.highlighted:active:focus, .datepicker table tr td.active.active:focus, .datepicker table tr td.active.highlighted.active:focus, .datepicker table tr td.active:active.focus, .datepicker table tr td.active.highlighted:active.focus, .datepicker table tr td.active.active.focus, .datepicker table tr td.active.highlighted.active.focus {
+  background-color: #0A0E20;
+}
+.datepicker table tr td span.active:active, .datepicker table tr td span.active:hover:active, .datepicker table tr td span.active.disabled:active, .datepicker table tr td span.active.disabled:hover:active, .datepicker table tr td span.active.active, .datepicker table tr td span.active:hover.active, .datepicker table tr td span.active.disabled.active, .datepicker table tr td span.active.disabled:hover.active {
+  background-color: #FF0058;
+
+}
+
+.datepicker table tr td.active:active, .datepicker table tr td.active.highlighted:active, .datepicker table tr td.active.active, .datepicker table tr td.active.highlighted.active {
+  background-color: #FF0058;
+}
+.datepicker-switch {
+  color: #FF0058;
+}
+
+.datepicker table {
+
+  border-radius: 10px;
+  background-color: white;
+
+}
+.datepicker-dropdown.datepicker-orient-left:before {
+  left: auto;
+  right: 6px;
+}
+/****** END DATE PICKER *******/
+.cards .card  img {
+  width: 224px;
+  height: 256px;
+  object-fit: cover;
+}
 /*** Add container width @Breakpoints ***/
 @media screen and (min-width:1024px) {
   .container {

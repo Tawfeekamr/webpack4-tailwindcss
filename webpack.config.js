@@ -1,7 +1,17 @@
+const webpack = require('webpack');
+
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
+const Config = require('webpack-chain');
+
+// Instantiate the configuration with a new API
+const config = new Config();
+new webpack.ProvidePlugin({
+  $: 'jquery',
+  jQuery: 'jquery'
+});
 module.exports = {
   entry: './dist/js/main.js',
   cache: false,

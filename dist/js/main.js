@@ -1,8 +1,12 @@
 import "../css/aos.css"
 import "../css/hover.css"
 import "../css/plyr-pink.css"
+import "bootstrap-datepicker/dist/css/bootstrap-datepicker3.css"
 import "../css/master.css"
 
+import $ from 'jquery';
+import datepicker from 'bootstrap-datepicker';
+import select2 from 'select2';
 import '../js/vendor/modernizr-3.8.0.min'
 import '../js/vendor/aos'
 import Plyr from 'plyr';
@@ -11,7 +15,13 @@ const player = new Plyr('#player');
 
 AOS.init();
 
+$('#datepicker').datepicker().on('changeDate', function(e){
+  $(this).datepicker('hide');
+});
 
+$(document).ready(function() {
+  $('.js-example-basic-single').select2();
+});
 
 let hamburger = document.getElementById('hamburgerbtn');
 

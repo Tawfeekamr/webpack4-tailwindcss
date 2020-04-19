@@ -50,7 +50,7 @@
             <a href="login.html" class="text-lg inline-block text-sm px-4 py-2 leading-none border rounded text-pink border-white hover:border-transparent hover:text-softblack mt-4 lg:mt-0">
               تسجيل الدخول
             </a>
-            <a href="siginup.html" class="text-lg inline-block text-sm px-4 py-2 leading-none border rounded text-pink border-white hover:border-transparent hover:border-softblack hover:bg-white hover:text-softblack mt-4 lg:mt-0">
+            <a href="siginup.html" class="text-lg inline-block text-sm leading-none rounded text-pink hover:text-softblack mt-4 lg:mt-0 text-softblack block h-15 px-5 bg-yellow rounded-full w-48 relative font-bold py-4 text-center hvr-pulse-shrink">
               مستخدم جديد
             </a>
           </div>
@@ -72,29 +72,43 @@
               أهلا بك في منصة شغفي
             </h2>
             <form action="">
-            <div>
-              <input class="bg-white focus:outline-none focus:shadow-outline border border-slight rounded-34 py-2 px-4 block w-full appearance-none leading-normal my-2 lg:h-16" type="text" required placeholder="الاسم الثلاثي">
+            <div class="flex flex-wrap md:flex-no-wrap">
+              <input class="bg-white focus:outline-none focus:shadow-outline border border-slight rounded-34 py-2 px-4 block w-full appearance-none leading-normal my-2 lg:h-16 md:mx-2" type="text" required placeholder="الاسم الثلاثي">
               <input class="bg-white focus:outline-none focus:shadow-outline border border-slight rounded-34 py-2 px-4 block w-full appearance-none leading-normal my-2 lg:h-16" type="email" required placeholder="البريد الالكتروني">
             </div>
+              <div class="flex w-full md:w-1/2">
+                <input class="bg-white focus:outline-none focus:shadow-outline border border-slight rounded-34 py-2 px-4 block w-full appearance-none leading-normal my-2 lg:h-16 md:mx-2" type="password" required placeholder="كلمة السر">
+
+              </div>
+              <div class="flex flex-wrap md:flex-no-wrap my-5">
+                <input id="datepicker" class="bg-white focus:outline-none focus:shadow-outline border border-slight rounded-34 py-2 px-4 block w-full md:w-1/2 appearance-none leading-normal my-2 lg:h-16 md:mx-2 w-1/2" type="text"  required placeholder="تاريخ الميلاد" data-provide="datepicker">
+                <select class="js-states form-control bg-white focus:outline-none focus:shadow-outline border border-slight text-light rounded-34 py-2 px-4 w-full md:w-1/2  leading-normal my-2 lg:h-16 md:mx-2 w-1/2">
+                  <option hidden >جنس</option>
+                  <optgroup label="اختر الجنس">
+                    <option value="ذكر">ذكر</option>
+                    <option value="انثى">انثى</option>
+                  </optgroup>
+                </select>
+
+
+              </div>
               <div>
-                <input class="bg-white focus:outline-none focus:shadow-outline border border-slight rounded-34 py-2 px-4 block w-full appearance-none leading-normal my-2 lg:h-16" type="email" required placeholder="كلمة السر">
-                <input class="bg-white focus:outline-none focus:shadow-outline border border-slight rounded-34 py-2 px-4 block w-full appearance-none leading-normal my-2 lg:h-16" type="email" required placeholder="كلمة السر">
-                <input class="bg-white focus:outline-none focus:shadow-outline border border-slight rounded-34 py-2 px-4 block w-full appearance-none leading-normal my-2 lg:h-16" type="email" required placeholder="كلمة السر">
-                <input class="bg-white focus:outline-none focus:shadow-outline border border-slight rounded-34 py-2 px-4 block w-full appearance-none leading-normal my-2 lg:h-16" type="email" required placeholder="كلمة السر">
+                <textarea class="bg-white focus:outline-none focus:shadow-outline border border-slight rounded-34 py-2 px-4 block w-full appearance-none leading-normal my-2" name="" id="" cols="30" rows="10" placeholder="لماذا تريد التسجيل في منصة شغفي؟ (100 كلمة)
+
+"></textarea>
               </div>
               <div class="w-full md:mt-12">
                 <div class="flex justify-center md:justify-start">
                   <button type="submit" class="block bg-pink p-2 text-center rounded-full text-white w-1/2 md:w-3/5 md:p-3 md:px-12 md:text-xl lg:w-1/2 lg:px-16 lg:text-2xl xl:w-3/6 hvr-wobble-vertical">
                     دخول
                   </button>
-
               </div>
 
           </div>
             </form>
 
           </div>
-          <img class="hidden md:flex text-left w-1/2 pl-16 hvr-buzz-out  xl:py-32" src="img/login.png" alt="">
+          <img class="hidden md:flex text-left w-1/2 pl-16 hvr-buzz-out xl:px-10 xl:py-32" src="img/login.png" alt="">
         </div>
 
 
