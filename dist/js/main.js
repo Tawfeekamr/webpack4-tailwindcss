@@ -9,8 +9,8 @@ import Plyr from 'plyr';
 
 const player = new Plyr('#player');
 
-
 AOS.init();
+
 
 
 let hamburger = document.getElementById('hamburgerbtn');
