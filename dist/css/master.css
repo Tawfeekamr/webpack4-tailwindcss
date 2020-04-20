@@ -215,7 +215,6 @@ header {
   overflow: hidden;
 }
 th, td {
-  padding: 1em;]
   color:#0A0E20;
   border-bottom: 2px solid #E7EBF2;
   border-left: 2px solid #E7EBF2;
@@ -241,6 +240,60 @@ tbody td i {
 thead {
   background-color: #FAD848;
 }
+
+.radio-div {
+  display: flex;
+  flex-grow: 1;
+  height: 50px;
+  background-color:blue;
+  cursor:pointer;
+  justify-content: center;
+  align-items: center;
+}
+.radio-div.show i {
+  display: block;
+}
+
+/*** End container width @Breakpoints ***/
+.example {
+  display: -ms-grid;
+  display: grid;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+  background: -o-linear-gradient(top, white, black);
+  background: linear-gradient(to bottom, white, black);
+}
+.links {
+  margin-top: 110px;
+}
+.links a {
+  color: #FF0058;
+}
+.links a:after {
+  padding: 0 6px;
+  color: #0A0E20;
+  content: ">";
+}
+
+.card {
+  background-color: #fff;
+}
+.category {
+  line-height: 40px;
+}
+
+.rounded-34 {
+  border-radius: 34px;
+}
+
+
+
 /*** Add container width @Breakpoints ***/
 @media screen and (max-width:767px) {
   header {
@@ -251,6 +304,10 @@ thead {
     width: 100%;
     display: block;
     object-fit: fill;
+  }
+
+  .links {
+    margin-top: 80px;
   }
 
 }
@@ -361,37 +418,3 @@ thead {
   }
 }
 
-/*** End container width @Breakpoints ***/
-.example {
-  display: -ms-grid;
-  display: grid;
-  -webkit-transition: all .5s;
-  -o-transition: all .5s;
-  transition: all .5s;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
-  background: -o-linear-gradient(top, white, black);
-  background: linear-gradient(to bottom, white, black);
-}
-.links a {
-  color: #FF0058;
-}
-.links a:after {
-  padding: 0 6px;
-  color: #0A0E20;
-  content: ">";
-}
-
-.card {
-  background-color: #fff;
-}
-.category {
-  line-height: 40px;
-}
-
-.rounded-34 {
-  border-radius: 34px;
-}
