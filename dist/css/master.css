@@ -153,7 +153,15 @@ body {
 }
 /****** ANIMATION BALLS *******/
 
+.logo {
+  width: 125px;
+  object-fit: cover;
+}
 
+.active {
+  color: #FF0058;
+  border-bottom: 3px solid  #FF0058;
+}
 
 /****** START DATE PICKER *******/
 .datepicker{
@@ -210,6 +218,10 @@ body {
   }
 }
 @media screen and (min-width:1280px) {
+  body {
+    height: 100%;
+  }
+
   .container {
     width: 1370px;
   }
@@ -246,6 +258,7 @@ body {
 
 
 @media screen and (min-width: 1900px) {
+
   .container {
     width: 1556px;
   }

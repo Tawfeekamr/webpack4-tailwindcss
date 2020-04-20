@@ -26,9 +26,16 @@
   <!-- Start Header -->
   <header class=" border-gray border-b border-slight bg-white">
     <div class="container mx-auto" data-aos="fade-down">
-      <nav class="flex items-center justify-between flex-wrap p-6 bg-white">
+      <nav class="flex items-center justify-between flex-wrap bg-white">
         <div class="flex items-center flex-shrink-0 text-white mr-6">
-          <a href="/"> <img src="img/shagafi_logo.svg" alt=""></a>
+          <a class=" block" href="/"> <img class="logo" src="img/shaghafi-logo/shaghfi-logo.png" alt=""></a>
+          <div class="border-r-2 border-slight mx-4">
+            <p class="text-softblack mx-4">
+              منصة تدريب الفنون والصناعات الثقافية
+              <br>
+              وزارة الثقافة
+            </p>
+          </div>
         </div>
         <div class="block lg:hidden">
           <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400" id="hamburgerbtn">
@@ -36,23 +43,24 @@
           </button>
         </div>
         <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-          <div class="text-sm lg:flex-grow text-xl hidden lg:block" id="mobileMenu">
-            <a href="all-courses.html" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-pink mr-4">
+          <div class="text-sm lg:flex-grow text-lg hidden lg:block text-left" id="mobileMenu">
+            <a href="/" class="active block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-pink mr-4 py-6">
+              الرئيسة
+            </a>
+            <a href="all-courses.html" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-pink mr-4 py-6">
               الدروس
             </a>
-            <a href="aboutus.html" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-pink mr-4">
+            <a href="aboutus.html" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-pink mr-4 py-6">
               عن المنصة
             </a>
-            <a href="contactus.html" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-pink mr-4">
+            <a href="contactus.html" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-pink mr-4 py-6">
               تواصل معنا
             </a>
-          </div>
-          <div>
-            <a href="login.html" class="text-lg inline-block text-sm px-4 py-2 leading-none border rounded text-pink border-white hover:border-transparent hover:text-softblack mt-4 lg:mt-0">
+            <a href="contactus.html" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-pink mr-4 py-6">
               تسجيل الدخول
             </a>
-            <a href="siginup.html" class="text-lg inline-block text-sm leading-none rounded text-softblack mt-4 lg:mt-0  block h-15 px-5 bg-yellow rounded-full w-48 relative font-bold py-4 text-center hover:text-white hover:bg-pink">
-              مستخدم جديد
+            <a href="contactus.html" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-softblack text-pink border rounded-full border-pink hover:border-softblack mx-2 px-4 p-2">
+             إنشاء حساب
             </a>
           </div>
         </div>
@@ -73,10 +81,19 @@
                 سجل الآن وانضم الى العديد في تعلم الأشغال اليدوية مع أبرز الفنانين الأردنيين
               </h2>
               <div class="w-full my-8 md:my-auto md:mt-12">
-                <div class="w-full mx-auto md:mx-0 pr-2 md:pr-0 md:text-right md:w-3/4">
-                  <a href="/" class="bg-pink p-3 md:px-8 rounded-full text-white text-lg text-center lg:text-xl xl:mr-2 xl:text-2xl bg-svg-3">
-                    اكتشف المجالات المطروحة
-                  </a>
+                <div class="w-full mx-auto md:mx-0 pr-2 md:pr-0 md:text-right flex  flex-wrap md:flex-no-wrap">
+                    <div class="">
+                      <a href="/" class="bg-pink p-3 md:px-8 rounded-full text-white text-lg text-center lg:text-xl xl:mr-2 xl:text-2xl bg-svg-3">
+                        اكتشف المجالات المطروحة
+                      </a>
+                    </div>
+                  <div class="block w-1/2 mx-3">
+
+                  <a href="/" class="text-pink px-2 p-3 border-4 w-full md:px-8 rounded-full text-lg text-center lg:text-xl xl:mr-2 xl:text-2xl">
+                        تسجيل الدخول
+                      </a>
+                  </div>
+
                 </div>
               </div>
 
@@ -191,7 +208,7 @@
               </div>
             </div>
           </div>
-          <div class="flex-1 my-4 xl:w-1/2 md:h-56 lg:h-64 xl:ml-4 border border-slight rounded-md card" data-aos="fade-left">
+          <div class="flex-1 my-4 xl:w-1/2 md:h-56 lg:h-64 xl:ml-4 border border-slight rounded-md card" data-aos="fade-right">
             <div class="flex w-full">
               <div class="md:h-56 md:h-56 lg:h-64 overflow-hidden block">
                 <img class="hidden md:block md:h-56 lg:h-64 rounded-r"  src="img/noon-300x300.png" alt="">
@@ -283,6 +300,7 @@
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
+    AOS.init();
 
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
