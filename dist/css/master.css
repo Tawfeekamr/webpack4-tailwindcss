@@ -203,6 +203,22 @@ body {
   object-fit: cover;
 }
 /*** Add container width @Breakpoints ***/
+@media screen and (max-width:520px) {
+  header {
+    height: 72px;
+    display: flex;
+    align-items: center;
+  }
+  .logo {
+    width: 58px;
+    object-fit: cover;
+  }
+  .solgen {
+    width: 160px;
+   }
+}
+
+
 @media screen and (min-width:1024px) {
   .container {
     width: 1370px;
@@ -216,11 +232,17 @@ body {
     max-width: 55%;
 
   }
+  .solgen {
+    width: 250px;
+  }
+
 }
 @media screen and (min-width:1280px) {
   body {
     height: 100%;
   }
+
+
 
   .container {
     width: 1370px;
