@@ -158,7 +158,7 @@ body {
   object-fit: cover;
 }
 
-.active {
+.active-li {
   color: #FF0058;
   border-bottom: 3px solid  #FF0058;
 }
@@ -201,6 +201,39 @@ body {
   width: 224px;
   height: 256px;
   object-fit: cover;
+}
+
+.table {
+  border-collapse: collapse;
+  border-radius: 1em;
+  overflow: hidden;
+}
+th, td {
+  padding: 1em;]
+  color:#0A0E20;
+  border-bottom: 2px solid #E7EBF2;
+  border-left: 2px solid #E7EBF2;
+  border-right: 2px solid #E7EBF2;
+  text-align: center;
+}
+
+tbody tr:first-child {
+  text-align: center;
+}
+tbody td:first-child {
+  text-align: center;
+}
+
+tbody td i {
+  font-size: 24px;
+  color: #FF0058;
+}
+
+.table .big{
+  width: 340px;
+}
+thead {
+  background-color: #FAD848;
 }
 /*** Add container width @Breakpoints ***/
 @media screen and (max-width:520px) {
