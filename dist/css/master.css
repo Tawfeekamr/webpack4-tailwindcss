@@ -220,6 +220,7 @@ th, td {
   border-left: 2px solid #E7EBF2;
   border-right: 2px solid #E7EBF2;
   text-align: center;
+  padding: 1em;
 }
 
 tbody tr:first-child {
@@ -242,13 +243,13 @@ thead {
 }
 
 .radio-div {
-  display: flex;
-  flex-grow: 1;
-  height: 50px;
-  background-color:blue;
-  cursor:pointer;
-  justify-content: center;
-  align-items: center;
+  /*display: flex;*/
+  /*flex-grow: 1;*/
+  /*height: 50px;*/
+  /*background-color:blue;*/
+  /*cursor:pointer;*/
+  /*justify-content: center;*/
+  /*align-items: center;*/
 }
 .radio-div.show i {
   display: block;
@@ -373,9 +374,6 @@ thead {
   body {
     height: 100%;
   }
-
-
-
   .container {
     width: 1370px;
   }
