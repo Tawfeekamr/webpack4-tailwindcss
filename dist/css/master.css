@@ -163,6 +163,12 @@ body {
   border-bottom: 3px solid  #FF0058;
 }
 
+header {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+}
+
 /****** START DATE PICKER *******/
 .datepicker{
   position: absolute;
@@ -236,23 +242,54 @@ thead {
   background-color: #FAD848;
 }
 /*** Add container width @Breakpoints ***/
+@media screen and (max-width:767px) {
+  header {
+    height: 72px;
+    padding-top: 20px;
+  }
+  .cards .card img {
+    width: 100%;
+    display: block;
+    object-fit: fill;
+  }
+
+}
 @media screen and (max-width:520px) {
+  .cards .card img {
+    width: 100%;
+    display: block;
+    object-fit: fill;
+  }
 
   .logo {
-    width: 58px;
+    width: 72px;
     object-fit: cover;
   }
   .solgen {
     width: 160px;
    }
 }
-
-@media screen and (max-width:320px) {
-  header {
-    padding: 4px;
+@media screen and (max-width:360px) {
+  .logo {
+    width: 58px;
+    object-fit: cover;
   }
   .solgen {
+    margin: 0;
+    margin-right: 5px;
+  }
+}
+
+@media screen and (max-width:320px) {
+  .solgen {
     display: none;
+  }
+  .cards .card img {
+    width: 100%;
+  }
+  .logo {
+    width: 58px;
+    object-fit: cover;
   }
 }
 
