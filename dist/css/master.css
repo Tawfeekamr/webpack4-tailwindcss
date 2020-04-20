@@ -214,7 +214,7 @@ header {
   border-radius: 1em;
   overflow: hidden;
 }
-th, td {
+.table th, .table td {
   color:#0A0E20;
   border-bottom: 2px solid #E7EBF2;
   border-left: 2px solid #E7EBF2;
@@ -223,14 +223,14 @@ th, td {
   padding: 1em;
 }
 
-tbody tr:first-child {
+.table tbody  tr:first-child {
   text-align: center;
 }
-tbody td:first-child {
+.table tbody td:first-child {
   text-align: center;
 }
 
-tbody td i {
+.table tbody td i {
   font-size: 24px;
   color: #FF0058;
 }
@@ -238,7 +238,7 @@ tbody td i {
 .table .big{
   width: 340px;
 }
-thead {
+.table thead {
   background-color: #FAD848;
 }
 
