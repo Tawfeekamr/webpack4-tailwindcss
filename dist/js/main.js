@@ -16,6 +16,8 @@ import MicroModal from 'micromodal';  // es6 module
 
 const player = new Plyr('#player');
 
+/****************** AOS Animation ************/
+
 AOS.init();
 
 $('#datepicker').datepicker({
@@ -29,6 +31,8 @@ $(document).ready(function() {
   $('.js-example-basic-single').select2();
 });
 
+/****************** Mobile Menu ************/
+
 let hamburger = document.getElementById('hamburgerbtn');
 
 let mobileMenu = document.getElementById('mobileMenu');
@@ -36,5 +40,7 @@ let mobileMenu = document.getElementById('mobileMenu');
 hamburger.addEventListener('click', function(){
   mobileMenu.classList.toggle('active');
 });
+
+/****************** Modal pop ************/
 MicroModal.init();
 

@@ -33,7 +33,7 @@ module.exports = {
         // (which should be serving on http://localhost:3100/)
         // through BrowserSync
         proxy: 'http://localhost:8080/',
-        files: ['./dist/*.html'],
+        files: ['dist/*.html'],
       },
       // plugin options
       {
