@@ -62,7 +62,9 @@ module.exports = {
     ]
   },
   devServer: {
+    // publicPath: '/dist/',
     watchContentBase: true,
+    // host: '192.168.37.1',
     contentBase: path.resolve(__dirname, 'dist'),
     open: false
   }
