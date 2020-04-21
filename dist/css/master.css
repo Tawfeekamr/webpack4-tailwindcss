@@ -186,6 +186,17 @@ header {
   width: 100%;
 }
 
+.video-list {
+  direction: ltr;
+  height: 570px;
+  overflow-y: scroll;
+  margin: 0 auto;
+}
+.video-list a {
+  direction: rtl;
+}
+
+
 /****** START DATE PICKER *******/
 .datepicker{
   position: absolute;
@@ -316,7 +327,7 @@ header {
 @media screen and (max-width:767px) {
   header {
     height: 72px;
-    padding-top: 20px;
+    padding-top: 11px;
   }
   .cards .card img {
     width: 100%;
@@ -327,7 +338,9 @@ header {
   .links {
     margin-top: 80px;
   }
-
+  .video-list {
+   height: 250px;
+  }
 }
 @media screen and (max-width:520px) {
   .cards .card img {
