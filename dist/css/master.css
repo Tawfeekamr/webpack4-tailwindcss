@@ -18,14 +18,16 @@
   url("//db.onlinewebfonts.com/t/b66fc2e5aebf8caea5968b38f84ce785.ttf") format("truetype"),
   url("//db.onlinewebfonts.com/t/b66fc2e5aebf8caea5968b38f84ce785.svg#Cocon Next Arabic") format("svg"); }
 
-@font-face {font-family: "Cocon Next Arabic Regular"; src: url("//db.onlinewebfonts.com/t/4ce5fad2df30ef4ed5ee61f579ee24b7.eot");
+@font-face {font-family: "Cocon Next Arabic Regular"; src: url("//db.onlinewebfonts.com/t/4ce5fad2df30ef4ed5ee61f579ee24b7.eot"); font-size: ;
   src: url("//db.onlinewebfonts.com/t/4ce5fad2df30ef4ed5ee61f579ee24b7.eot?#iefix") format("embedded-opentype"),
   url("//db.onlinewebfonts.com/t/4ce5fad2df30ef4ed5ee61f579ee24b7.woff2") format("woff2"),
   url("//db.onlinewebfonts.com/t/4ce5fad2df30ef4ed5ee61f579ee24b7.woff") format("woff"),
   url("//db.onlinewebfonts.com/t/4ce5fad2df30ef4ed5ee61f579ee24b7.ttf") format("truetype"),
   url("//db.onlinewebfonts.com/t/4ce5fad2df30ef4ed5ee61f579ee24b7.svg#Cocon Next Arabic") format("svg"); }
+
 body {
   direction: rtl;
+  min-height: 100%;
 }
 
 .active{

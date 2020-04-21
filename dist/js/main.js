@@ -5,7 +5,7 @@ import "bootstrap-datepicker/dist/css/bootstrap-datepicker3.css"
 import "../css/master.css"
 
 import $ from 'jquery';
-import Vue from 'vue';
+// import Vue from 'vue';
 import datepicker from 'bootstrap-datepicker';
 import select2 from 'select2';
 import '../js/vendor/modernizr-3.8.0.min'

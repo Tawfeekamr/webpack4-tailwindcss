@@ -67,7 +67,7 @@
     </div>
   </header>
   <!-- End Header -->
-    <main class="container overflow-hidden">
+    <main class="container overflow-hidden pt-12">
       <!-- Start Bottom Section -->
       <section class="pb-12 py-5 lg:py-10 ">
         <div class="flex text-right items-center md:justify-center" data-aos="fade-up">
@@ -80,24 +80,50 @@
             </h2>
             <form action="">
             <div class="flex flex-wrap md:flex-no-wrap">
-              <input class="bg-white focus:outline-none focus:shadow-outline border border-slight rounded-34 py-2 px-4 block w-full appearance-none leading-normal my-2 lg:h-16 md:mx-2" type="text" required placeholder="الاسم الثلاثي">
-              <input class="bg-white focus:outline-none focus:shadow-outline border border-slight rounded-34 py-2 px-4 block w-full appearance-none leading-normal my-2 lg:h-16" type="email" required placeholder="البريد الالكتروني">
+                  <div class="w-full md:w-1/2">
+                    <input class="bg-white focus:outline-none focus:shadow-outline border border-slight rounded-34 py-2 px-4 block w-full appearance-none leading-normal my-2 lg:h-16 md:mx-2" type="text" required placeholder="الاسم الثلاثي">
+                    <div class="flex flex-wrap md:flex-no-wrap w-full">
+                      <span class="text-red mr-4">الاسم قصير</span>
+                    </div>
+                  </div>
+              <div class="w-full md:w-1/2 mx-3">
+                <input class="bg-white focus:outline-none focus:shadow-outline border border-slight rounded-34 py-2 px-4 block w-full appearance-none leading-normal my-2 lg:h-16" type="email" required placeholder="البريد الالكتروني">
+                <div class="flex flex-wrap md:flex-no-wrap w-full">
+                  <span class="text-red mr-4">مطلوب بريد صحيح</span>
+                </div>
+              </div>
             </div>
-              <div class="flex w-full md:w-1/2">
-                <input class="bg-white focus:outline-none focus:shadow-outline border border-slight rounded-34 py-2 px-4 block w-full appearance-none leading-normal my-2 lg:h-16 md:mx-2" type="password" required placeholder="كلمة السر">
 
+
+              <div class="flex w-full md:w-1/2 md:mt-5">
+                <div class="w-full">
+                  <input class="bg-white focus:outline-none focus:shadow-outline border border-slight rounded-34 py-2 px-4 block w-full appearance-none leading-normal my-2 lg:h-16 md:mx-2" type="password" required placeholder="كلمة السر">
+                </div>
+              </div>
+              <div class="flex flex-wrap md:flex-no-wrap w-full">
+                <span class="text-red mr-4">مطلوب بريد صحيح</span>
               </div>
               <div class="flex flex-wrap md:flex-no-wrap my-5">
-                <input id="datepicker" class="bg-white focus:outline-none focus:shadow-outline border border-slight rounded-34 py-2 px-4 block w-full md:w-1/2 appearance-none leading-normal my-2 lg:h-16 md:mx-2 w-1/2" type="text"  required placeholder="تاريخ الميلاد" data-provide="datepicker">
-                <select class="js-states form-control bg-white focus:outline-none focus:shadow-outline border border-slight text-light rounded-34 py-2 px-4 w-full md:w-1/2  leading-normal my-2 lg:h-16 md:mx-2 w-1/2">
+
+                <div class="w-full ml-4">
+                  <input id="datepicker" class="bg-white focus:outline-none focus:shadow-outline border border-slight rounded-34 py-2 px-4 block w-full appearance-none leading-normal my-2 lg:h-16 md:mx-2 w-1/2" type="text"  required placeholder="تاريخ الميلاد" data-provide="datepicker">
+                  <div class="flex flex-wrap md:flex-no-wrap w-full">
+                    <span class="text-red mr-4">يجب تحديد تاريخ الميلاد</span>
+                  </div>
+                </div>
+
+              <div class="w-full">
+                <select class="js-states form-control bg-white focus:outline-none focus:shadow-outline border border-slight text-light rounded-34 py-2 px-4 w-full md:w-3/4  leading-normal my-2 lg:h-16 md:mx-2 w-1/2">
                   <option hidden >جنس</option>
                   <optgroup label="اختر الجنس">
                     <option value="ذكر">ذكر</option>
                     <option value="انثى">انثى</option>
                   </optgroup>
                 </select>
-
-
+                <div class="flex flex-wrap md:flex-no-wrap w-full">
+                  <span class="text-red mr-4">يجب تحديد الجنس</span>
+                </div>
+              </div>
               </div>
               <div>
                 <textarea class="bg-white focus:outline-none focus:shadow-outline border border-slight rounded-34 py-2 px-4 block w-full appearance-none leading-normal my-2" name="" id="" cols="30" rows="10" placeholder="لماذا تريد التسجيل في منصة شغفي؟ (100 كلمة)
