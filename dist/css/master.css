@@ -30,6 +30,13 @@ body {
   min-height: 100%;
 }
 
+footer {
+  position: static;
+}
+main {
+  padding-top: 40px;
+
+}
 .active{
   display: block;
 }
