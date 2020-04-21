@@ -16,7 +16,10 @@ const player = new Plyr('#player');
 
 AOS.init();
 
-$('#datepicker').datepicker().on('changeDate', function(e){
+$('#datepicker').datepicker({
+  format: 'yyyy-mm-dd'
+
+}).on('changeDate', function(e){
   $(this).datepicker('hide');
 });
 
