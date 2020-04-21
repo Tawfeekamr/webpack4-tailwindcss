@@ -39,6 +39,14 @@ body {
   top: 7px;
 }
 
+.modal {
+  display: none;
+}
+
+.modal.is-open {
+  display: block;
+}
+
 /****** ANIMATION BALLS *******/
 
 @-webkit-keyframes bounce {

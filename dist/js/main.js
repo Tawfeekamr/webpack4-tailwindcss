@@ -1,5 +1,6 @@
 import "../css/aos.css"
 import "../css/hover.css"
+import "../css/modal.css"
 import "../css/plyr-pink.css"
 import "bootstrap-datepicker/dist/css/bootstrap-datepicker3.css"
 import "../css/master.css"
@@ -11,6 +12,7 @@ import select2 from 'select2';
 import '../js/vendor/modernizr-3.8.0.min'
 import '../js/vendor/aos'
 import Plyr from 'plyr';
+import MicroModal from 'micromodal';  // es6 module
 
 const player = new Plyr('#player');
 
@@ -34,4 +36,5 @@ let mobileMenu = document.getElementById('mobileMenu');
 hamburger.addEventListener('click', function(){
   mobileMenu.classList.toggle('active');
 });
+MicroModal.init();
 
