@@ -5,3 +5,7 @@
     (IE10+), browser-sync to run the code throw local and public netowrk
     (For Mobile as example). Just Clone the project, then cd to the foloder
     then type npm i && npm start super easy to use.
+
+cd to the project and type:
+<code>npm i </code> 
+<code>npm start </code> 
