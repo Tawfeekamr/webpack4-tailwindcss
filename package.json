@@ -35,9 +35,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://tawfiq_amro@bitbucket.org/tawfiq_amro/shagafi-frontend.git"
+    "url": "git+https://github.com/Tawfeekamr/webpack4-tailwindcss"
   },
   "author": "Tawfeeq Amro",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/tawfiq_amro/shagafi-frontend#readme"
+  "homepage": "https://github.com/Tawfeekamr/webpack4-tailwindcss"
 }
