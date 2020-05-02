@@ -1,340 +1,179 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Your Title</title>
 
-<head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <link rel="manifest" href="site.webmanifest.json">
-  <link rel="apple-touch-icon" href="../icon.png">
-  <!-- Place favicon.ico in the root directory -->
-  <meta name="theme-color" content="#fafafa">
-  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
-  <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
+    <!-- for PWA -->
+    <link rel="manifest" href="site.webmanifest.json" />
+    <link rel="apple-touch-icon" href="../icon.png" />
 
+    <meta name="title" content="Put your website data here" />
+    <meta name="description" content="Put your website data here" />
 
-  <meta name="title" content="التسجيل الإلكتروني لتنظيم عملية النقل للأردنيين خارج المملكة">
-  <meta name="description" content="الموقع الرسمي للتسجيل الإلكتروني لتنظيم عملية النقل المتدرج للطلبة الأردنيين والزوار الذين تقطعت بهم السبل في الخارج إلى المملكة">
+    <!-- General OG TAGS -->
 
-  <link rel="apple-touch-icon" sizes="76x76" href="dist/img/shaghafi-logo/76x76.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="dist/img/shaghafi-logo/70x70.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="dist/img/shaghafi-logo/150x150.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="dist/img/shaghafi-logo/310x310.png">
-  <link href="dist/img/shaghafi-logo/192x192.png" rel="icon" sizes="192x192"/>
-  <link href="dist/img/shaghafi-logo/128x128.png" rel="icon" sizes="128x128"/>
-  <meta name="msapplication-TileColor" content="#ffffff"/>
-  <meta name="msapplication-square70x70logo" content="dist/img/shaghafi-logo/70x70.png"/>
-  <meta name="msapplication-square150x150logo" content="dist/img/shaghafi-logo/150x150.png"/>
-  <meta name="msapplication-square310x310logo" content="dist/img/shaghafi-logo/310x310.png"/>
+    <link rel="apple-touch-icon" sizes="76x76" href="dist/img/icon.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="dist/img/icon.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="dist/img/icon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="dist/img/icon.png" />
+    <link href="dist/img/icon.png" rel="icon" sizes="192x192" />
+    <link href="dist/img/icon.png" rel="icon" sizes="128x128" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-square70x70logo"
+      content="dist/img/shaghafi-logo/70x70.png"
+    />
+    <meta
+      name="msapplication-square150x150logo"
+      content="dist/img/shaghafi-logo/150x150.png"
+    />
+    <meta
+      name="msapplication-square310x310logo"
+      content="dist/img/shaghafi-logo/310x310.png"
+    />
 
-  <meta property="og:site_name" content="shaghafi">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="منصة تدريب الفنون والصناعات الثقافية. وزارة الثقافة الأردنية">
-  <meta property="og:url" content="https://shaghafi.gov.jo">
-  <meta property="og:image" content="dist/img/shaghafi-logo/shaghfi-logo.png">
-  <meta property="og:description" content="منصة تدريب الفنون والصناعات الثقافية. وزارة الثقافة الأردنية"> <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@shaghafi">
-  <meta name="twitter:title" content="منصة تدريب الفنون والصناعات الثقافية. وزارة الثقافة الأردنية">
-  <meta name="twitter:image" content="dist/img/shaghafi-logo/shaghfi-logo.png">
-  <meta name="twitter:description" content="منصة تدريب الفنون والصناعات الثقافية. وزارة الثقافة الأردنية">
+    <meta property="og:site_name" content="your website" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Put your website data here" />
+    <meta property="og:url" content="https://yourwebsite.com" />
+    <meta property="og:image" content="dist/img/icon.png" />
 
+    <!-- Twitter Card  OG TAGS -->
+    <meta property="og:description" content="Put your website data here" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@your website" />
+    <meta name="twitter:title" content="Put your website description here" />
+    <meta name="twitter:image" content="dist/img/icon.png" />
+    <meta
+      name="twitter:description"
+      content="Put your website description here"
+    />
+  </head>
 
-</head>
-
-<body class="font-body text-gray bg-white">
-  <!--[if IE]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
-
-
-  <!-- Start Header -->
-  <header class=" border-gray border-b border-slight bg-white">
-    <div class="container xl:mx-auto" data-aos="fade-down">
-      <nav class="flex items-center justify-between flex-wrap bg-white">
-        <div class="flex items-center flex-shrink-0 px-2 md:px-0 text-white md:mr-6">
-          <a class=" block" href="/"> <img class="logo" src="img/shaghafi-logo/shaghfi-logo.png" alt=""></a>
-          <div class="border-r-2 border-slight mx-4">
-            <p class="text-softblack mx-4 md:ml-0 solgen text-xs lg:text-base xl:text-lg ">
-              منصة تدريب الفنون والصناعات الثقافية.
-              وزارة الثقافة
-            </p>
-          </div>
+  <body class="font-body text-gray bg-white">
+    <!--[if IE]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+    <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
+      <div class="flex items-center flex-shrink-0 text-white mr-6">
+        <svg
+          class="fill-current h-8 w-8 mr-2"
+          width="54"
+          height="54"
+          viewBox="0 0 54 54"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"
+          />
+        </svg>
+        <span class="font-semibold text-xl tracking-tight">Tailwind CSS</span>
+      </div>
+      <div class="block lg:hidden">
+        <button
+          class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white"
+        >
+          <svg
+            class="fill-current h-3 w-3"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+        </button>
+      </div>
+      <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+        <div class="text-sm lg:flex-grow">
+          <a
+            href="#responsive-header"
+            class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+          >
+            Docs
+          </a>
+          <a
+            href="#responsive-header"
+            class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+          >
+            Examples
+          </a>
+          <a
+            href="#responsive-header"
+            class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white"
+          >
+            Blog
+          </a>
         </div>
-        <div class="block lg:hidden pl-3">
-          <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400" id="hamburgerbtn">
-            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-          </button>
-        </div>
-        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-          <div class="w-1/2 mx-auto mb-5 md:mb-0 text-sm text-center lg:flex-grow xl:text-lg hidden lg:block lg:text-left" id="mobileMenu">
-            <a href="/" class="active-li block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-pink mr-4 py-6">
-              الرئيسة
-            </a>
-            <a href="all-courses.html" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-pink mr-4 py-6">
-              الدروس
-            </a>
-            <a href="aboutus.html" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-pink mr-4 py-6">
-              عن المنصة
-            </a>
-            <a href="contactus.html" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-pink mr-4 py-6">
-              تواصل معنا
-            </a>
-            <a href="contactus.html" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-pink mr-4 py-6">
-              تسجيل الدخول
-            </a>
-            <a href="siginup.html" class="block mt-4 w-3/2 lg:inline-block lg:mt-0 text-teal-200 hover:text-softblack text-pink border rounded-full border-pink hover:border-softblack mx-2 px-4 p-2">
-              إنشاء حساب
-            </a>
-          </div>
-        </div>
-      </nav>
-
-    </div>
-  </header>
-  <!-- End Header -->
-    <main class="container overflow-hidden pt-16">
-      <!-- Start Master Section -->
-      <section class="h-full block md:pt-12 lg:py-20 xl:py-32">
-        <div class="flex text-right items-center justify-center" data-aos="fade-up">
-            <div class="flex-col justify-center lg:w-3/4">
-              <h1 class="text-4xl my-4 lg:text-6xl xl:text-8xl md:w-3/4 px-4 md:px-0 md:text-right 2xl:text-6xl 3xl:text-8xl">
-                رحلتك في اكتشاف <span class="text-pink hvr-hang">شغفك</span> تبدأ الآن!
-              </h1>
-              <h2 class="inline-flex px-4 pb-2 md:pl-16 md:text-right md:px-0 lg:text-lg xl:text-lg xl:w-3/4 text-lg text-gray font-light">
-                تطوير:
-                <img class="mx-4" src="molhem-logo.svg" alt="">
-              </h2>
-              <div class="w-full my-8 md:my-auto md:mt-12">
-                <div class="w-full mx-auto md:mx-0 pr-2 md:pr-0 md:text-right flex  flex-wrap sm:flex-no-wrap">
-                    <div class="">
-                      <a href="/" class="bg-pink p-3 md:px-8 rounded-full text-white text-lg text-center lg:text-xl xl:mr-2 xl:text-2xl bg-svg-3">
-                        اكتشف المجالات المطروحة
-                      </a>
-                    </div>
-                  <div class="flex md:block w-1/2 sm:w-64 md:w1/2 md:mx-3 mt-8 sm:mx-4 sm:mt-0">
-
-                  <a href="login.html" class="text-pink px-2 p-1 md:p-3 border-4 w-full sm:3/4 md:px-8 rounded-full text-lg text-center lg:text-xl xl:mr-2 xl:text-2xl">
-                        تسجيل الدخول
-                      </a>
-                  </div>
-
-                </div>
-              </div>
-
-            </div>
-          <div class="md:w-64 lg:w-1/2">
-            <img class="flex text-left hidden md:block ie-fix hvr-shrink" src="img/clay_645x645_circle.png" alt="">
-          </div>
-        </div>
-      </section>
-      <!-- End Master Section -->
-      <section class="px-4 py-8 md:py-24 lg:pr-0 lg:py-20 xl:py-28">
         <div>
-          <div class="flex flex-row flex-wrap">
-            <div class="flex w-3/2 md:w-3/4 bg-gray-400 p-2 text-gray-700">
-              <h2 class="float-right text-3xl text-softblack md:text-4xl md:pb-4">
-                المجالات المقدمة
-              </h2>
-            </div>
-            <div class="md:w-1/4 bg-gray-500 p-4 text-center text-gray-200  text-pink underline">
-              <a href="all-courses.html" class="inline-flex justify-center items-center pt-1 md:pt-3">
-                إظهار الجميع
-              </a>
-            </div>
-
-          </div>
+          <a
+            href="#"
+            class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0"
+            >Download</a
+          >
         </div>
-        <div class="xl:flex mb-4 lg:pl-12 cards">
-          <div class="flex-1 my-4 xl:w-1/2 md:h-56 lg:h-64 xl:ml-4 border border-slight rounded-md card" data-aos="fade-left">
-            <div class="md:flex flex-wrap md:flex-no-wrap w-full">
-              <div class="flex-wrap md:h-56 md:h-56 lg:h-64 overflow-hidden block">
-                <img class="w-full md:block md:h-56 lg:h-64 rounded-r"  src="img/noon-300x300.png" alt="">
-              </div>
-              <div class="flex-1 p-2 pr-4">
-                <p class="text-light mb-2">
-                  الصناعات الخزفية
-                </p>
-                <h3 class="font-bold text-2xl text-softblack">
-                  مدخل الى السيراميك والخزف
-                </h3>
-                <p class="text-gray text-lg my-2 md:mt-3 md:h-8 lg:h-16">
-                  ستتعلم مبادئ البناء الخزفي والطرق المتبعة لإنشاء العمل الفني
-                </p>
-                <p class="text-light">
-                  تقدمها المصممة ريما دحبور
-                </p>
-                <div class="mt-4 md:mt-2">
-                  <a href="video-show-page.html" class="text-softblack block h-12 px-5 bg-yellow py-3 rounded-full w-48 relative font-bold hvr-backward">
-                    اذهب الى الدرس
-                    <span class="absolute arrow-place">
-                      <i class="las la-arrow-left text-4xl text-softblack"></i>
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="flex-1 my-4 xl:w-1/2 md:h-56 lg:h-64 xl:ml-4 border border-slight rounded-md card" data-aos="fade-right">
-            <div class="md:flex flex-wrap md:flex-no-wrap w-full">
-              <div class="flex-wrap md:h-56 md:h-56 lg:h-64 overflow-hidden block">
-                <img class="w-full md:block md:h-56 lg:h-64 rounded-r"  src="img/noon-300x300.png" alt="">
-              </div>
-              <div class="flex-1 p-2 pr-4">
-                <p class="text-light mb-2">
-                  الصناعات الخزفية
-                </p>
-                <h3 class="font-bold text-2xl text-softblack">
-                  مدخل الى السيراميك والخزف
-                </h3>
-                <p class="text-gray text-lg my-2 md:mt-3 md:h-8 lg:h-16">
-                  ستتعلم مبادئ البناء الخزفي والطرق المتبعة لإنشاء العمل الفني
-                </p>
-                <p class="text-light">
-                  تقدمها المصممة ريما دحبور
-                </p>
-                <div class="mt-4 md:mt-2">
-                  <a href="all-courses.html" class="text-softblack block h-12 px-5 bg-yellow py-3 rounded-full w-48 relative font-bold hvr-backward">
-                    اذهب الى الدرس
-                    <span class="absolute arrow-place">
-                      <i class="las la-arrow-left text-4xl text-softblack"></i>
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="flex-1 my-4 xl:w-1/2 md:h-56 lg:h-64 xl:ml-4 border border-slight rounded-md card" data-aos="fade-left">
-            <div class="md:flex flex-wrap md:flex-no-wrap w-full">
-              <div class="flex-wrap md:h-56 md:h-56 lg:h-64 overflow-hidden block">
-                <img class="w-full md:block md:h-56 lg:h-64 rounded-r"  src="img/noon-300x300.png" alt="">
-              </div>
-              <div class="flex-1 p-2 pr-4">
-                <p class="text-light mb-2">
-                  الصناعات الخزفية
-                </p>
-                <h3 class="font-bold text-2xl text-softblack">
-                  مدخل الى السيراميك والخزف
-                </h3>
-                <p class="text-gray text-lg my-2 md:mt-3 md:h-8 lg:h-16">
-                  ستتعلم مبادئ البناء الخزفي والطرق المتبعة لإنشاء العمل الفني
-                </p>
-                <p class="text-light">
-                  تقدمها المصممة ريما دحبور
-                </p>
-                <div class="mt-4 md:mt-2">
-                  <a href="video-show-page.html" class="text-softblack block h-12 px-5 bg-yellow py-3 rounded-full w-48 relative font-bold hvr-backward">
-                    اذهب الى الدرس
-                    <span class="absolute arrow-place">
-                      <i class="las la-arrow-left text-4xl text-softblack"></i>
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="flex-1 my-4 xl:w-1/2 md:h-56 lg:h-64 xl:ml-4 border border-slight rounded-md card" data-aos="fade-right">
-            <div class="md:flex flex-wrap md:flex-no-wrap w-full">
-              <div class="flex-wrap md:h-56 md:h-56 lg:h-64 overflow-hidden block">
-                <img class="w-full md:block md:h-56 lg:h-64 rounded-r"  src="img/noon-300x300.png" alt="">
-              </div>
-              <div class="flex-1 p-2 pr-4">
-                <p class="text-light mb-2">
-                  الصناعات الخزفية
-                </p>
-                <h3 class="font-bold text-2xl text-softblack">
-                  مدخل الى السيراميك والخزف
-                </h3>
-                <p class="text-gray text-lg my-2 md:mt-3 md:h-8 lg:h-16">
-                  ستتعلم مبادئ البناء الخزفي والطرق المتبعة لإنشاء العمل الفني
-                </p>
-                <p class="text-light">
-                  تقدمها المصممة ريما دحبور
-                </p>
-                <div class="mt-4 md:mt-2">
-                  <a href="video-show-page.html" class="text-softblack block h-12 px-5 bg-yellow py-3 rounded-full w-48 relative font-bold hvr-backward">
-                    اذهب الى الدرس
-                    <span class="absolute arrow-place">
-                      <i class="las la-arrow-left text-4xl text-softblack"></i>
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="xl:flex mb-4 lg:pl-12 lg:pr-0">
-
-        </div>
-
-      </section>
-
-      <!-- Start Bottom Section -->
-      <section class="pb-12 lg:py-10 xl:py-24">
-        <div class="flex text-right items-center md:justify-center" data-aos="flip-up">
-          <img class="hidden md:flex text-left w-1/2 pl-16 hvr-buzz-out" src="img/bottom.png" alt="">
-          <div class="flex-col justify-center h-full px-6">
-            <h1 class="text-4xl xl:text-6xl 3xl:text-8xl xl:w-3/4 ">
-              لأن في التعلم <span class="text-pink">متعة!</span>
-            </h1>
-            <h2 class="md:text-xl lg:text-2xl xl:text-4xl md:w-3/2 text-light font-light py-6 md:py-0">
-              أهدافك وهواياتك التي لم تنفك عن التفكير بها أصبحت بمتناول يديك.
-            </h2>
-            <div class="w-full md:mt-12">
-              <div class="">
-                <a href="/" class="block bg-pink p-2 text-center rounded-full text-white w-3/6 md:w-3/5 md:p-3 md:px-12 md:text-xl lg:w-1/2 lg:px-16 lg:text-2xl xl:w-3/6 hvr-wobble-vertical">
-                  اشترك الآن
-                </a>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-
-      </section>
-
-      <!-- End Bottom Section -->
-    </main>
-
-  <span class="md:inline">
-          <span class="bouncer bg-span absolute">
-      <img class="bg-svg" src="img/Oval.svg" alt="">
-    </span>
-    </span>
-
-  <footer class="bg-gray text-white">
-    <div class="flex md:flex-row-reverse flex-wrap align-middle container">
-      <div class="w-full md:w-1/2 bg-gray-500 pt-3 md:p-4 text-center md:text-left text-gray-200 text-3xl">
-        <i class="lab la-linkedin-in"></i>
-        <i class="lab la-twitter"></i>
-        <i class="lab la-facebook-f"></i>
       </div>
-      <div class="w-full md:w-1/2 bg-gray-400 pb-3 md:p-3 text-center md:text-right text-gray-700">
-        <p class="pt-4">
-          جميع الحقوق محفوظة © موضوع 2020
-        </p>
+    </nav>
+    <div class="container">
+      <p class="font-bold">
+        Based on HTML5 Boilerplate v7.3 https://html5boilerplate.com/
+      </p>
+      <p class="pb-5">
+        Boilerplate for webpack 4 with tailwindcss, PostCSS, Autoprefixer,
+        browser-sync. Pre-configured webpack 4 with tailwind css as CSS
+        framework, With PostCSS & Autoprefixer for most browser compatibility
+        (IE10+), browser-sync to run the code throw local and public netowrk
+        (For Mobile as example). Just Clone the project, then cd to the foloder
+        then type npm i && npm start super easy to use.
+      </p>
+      <div class="max-w-sm rounded overflow-hidden shadow-lg">
+        <img class="w-full" src="/img/icon.png" alt="Sunset in the mountains" />
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">The Coldest Sunset</div>
+          <p class="text-gray-700 text-base">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Voluptatibus quia, nulla! Maiores et perferendis eaque,
+            exercitationem praesentium nihil.
+          </p>
+        </div>
+        <div class="px-6 py-4">
+          <span
+            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
+            >#photography</span
+          >
+          <span
+            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
+            >#travel</span
+          >
+          <span
+            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700"
+            >#winter</span
+          >
+        </div>
       </div>
     </div>
-  </footer>
-<!--  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrirty="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>-->
-<!--  <script>window.jQuery || document.write('<script src="../js/vendor/jquery-3.4.1.min.js"><\/script>')</script>-->
-<!--  <script src="../js/plugins.js"></script>-->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="bundle.js"></script>
+    <script src="bundle.js"></script>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    AOS.init();
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+      AOS.init();
 
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
-
-</body>
-
+      window.ga = function () {
+        ga.q.push(arguments);
+      };
+      ga.q = [];
+      ga.l = +new Date();
+      ga("create", "UA-XXXXX-Y", "auto");
+      ga("set", "transport", "beacon");
+      ga("send", "pageview");
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+  </body>
 </html>
