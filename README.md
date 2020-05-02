@@ -7,5 +7,5 @@
     then type npm i && npm start super easy to use.
 
 cd to the project and type:
-<code>npm i </code> 
+<code>npm i </code> then 
 <code>npm start </code> 
