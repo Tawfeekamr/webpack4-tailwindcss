@@ -18,7 +18,7 @@
     "doc": "doc"
   },
   "devDependencies": {
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.27.10",
     "browser-sync-webpack-plugin": "^2.2.2",
     "jquery": "^3.5.0",
     "mini-css-extract-plugin": "^0.9.0",
